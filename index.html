@@ -6,7 +6,8 @@
     <title>Document</title>
     <link rel = "stylesheet" href ="style.css">
 </head>
-
+<style>
+</style>
 <body >
    <h1 style = "text-align:center">Table</h1>
    <div>
@@ -37,10 +38,20 @@
     </div>
     <br>
     <button id="delete">Delete</button>
+    <br><br>
+    <div class = "setColor"> 
+        <label for = "color" >Color: </label>
+        <select name = "Color" id = "colorOption" onchange = "setCurrColor(this.value)">
+            <option id = "Red" value = "#EA4335" >Red</option>
+            <option id = "Green" value = "#2DA94F" >Green</option>
+        </select>
+    </div>
 
 
    <div id = "container1">
+      <table id = "grid" >
 
+      </table>
     </div>
    <div id = "container2">
 
