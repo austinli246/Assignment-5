@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href ="style.css">
+</head>
+<style>
+</style>
+<body >
+   <h1 style = "text-align:center">Table</h1>
+   <div>
+       <p>Add Rows and Columns</p>
+   </div>
+
+   <div>
+    <p>Rows: </p>
+    <input type = "number" id = "rows">
+   </div>
+   <div>
+    <p>Columns: </p>
+    <input type = "number" id = "columns"> 
+   </div>
+   <br>
+   <button id = "submit">Create</button>
+
+
+   <div>
+     <p>Delete Rows and Columns</p>
+    </div>
+    <div>
+    <p>Rows: </p>
+    <input type = "number" id = "Row">
+    </div>  
+    <div>
+    <p>Columns: </p>
+    <input type="number" id="Column">
+    </div>
+    <br>
+    <button id="delete">Delete</button>
+    <br><br>
+        <label for = "color" >Color: </label>
+        <select name = "Color" id = "colorOption" onchange = "setCurrColor(this.value)">
+            <option id = "Red" value = "white" >--</option>
+            <option id = "Red" value = "Red" >Red</option>
+            <option id = "Green" value = "Green" >Green</option>
+            <option id = "Blue" value = "Blue">Blue</option>
+            <option id ="Purple" value = "purple">Purple</option>
+            <option id = "Yellow" value = "yellow" >Yellow</option>
+
+        </select>
+    </div>
+    <br><br>
+    <div class = fillUncoloredCells>
+        <button id = "fillUncolored" onclick = "fillNotColored()">Fill Uncolored Cells</button>
+    </div>
+    <br>
+    <div class = fillAll >
+        <button id = "fillAll" onclick = "fillAll()">Fill All Cells</button>
+    </div>
+    <br>
+    <div class = fillAll >
+        <button id = "restoreAll" onclick = "restoreAll()">Restore All Cells</button>
+    </div>
+    <br><br><br>
+   <div id = "container1">
+      <table id = "grid" >
+
+      </table>
+    </div>
+   <div id = "container2">
+
+   </div>
+
+
+    </table>
+    
+
+    <script src = "script.js" ></script>
+</body>
+</html>
